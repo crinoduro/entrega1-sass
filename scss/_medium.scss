@@ -1,0 +1,162 @@
+/* dispositivo mediano */
+@media (min-width:481px) and (max-width:1024px) {
+    
+
+    /* GRID AREAS */
+
+#gridAreas {
+
+    display: grid;
+
+    grid-template-areas:
+
+    "sup sup sup"
+    "navegacion navegacion navegacion"
+    "carr carr carr"
+    "atrac atrac atrac"
+    "add add promoc"
+    "table table promoc"
+    "contact contact contact"
+    "pie pie pie";
+}
+
+
+
+/* INICIO CSS */
+
+* {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90vw;
+
+}
+
+
+
+#logo img {
+    width: 100px;
+}
+
+nav div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(79, 124, 206);
+    text-align: center;
+    font-weight: 700;
+    color: cornsilk;
+}
+
+nav  a:visited {
+    text-decoration: none;
+    color:cornsilk
+}
+
+#atracciones div img {
+    width: 40vw;
+}
+
+#promo .add-vertical {
+    display: block;
+}
+
+#promo .add-horizontal {
+    display: none;
+}
+
+#info {
+    width: 68vw;
+    h1 {
+        text-align: center;
+        width: 68vw;}
+    p { 
+            text-align: center;
+            width: 68vw;}
+}
+
+
+
+#tabla {
+    width: 68vw;
+    h1 {
+        text-align: center;
+        width: 68vw;}
+    img {
+            width: 68vw;}
+}
+
+
+
+#promo {
+    width: 20vw;
+}
+
+#promo img {
+    width: 20vw;
+   
+}
+
+#contacto{ text-align: center;
+    
+    h1 {
+    text-align: center;}
+    
+    .formfond {
+    background-color: cornsilk;}
+}
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+}
+
+
+/* FIN CSS */
+
+/* INICIO GRIDS */
+
+#atracciones .grilla-grid {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+/* FIN GRIDS */
+
+/* FLEX */
+#logo {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-flex  {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: start;
+    
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#promo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* FIN FLEX */
+}
+/*FIN MEDIANO*/

@@ -1,0 +1,281 @@
+@charset "UTF-8";
+* {
+  font-family: 'Outfit', sans-serif;
+  background-color: cornflowerblue; }
+
+/*index */
+#logo {
+  grid-area: sup; }
+
+nav {
+  grid-area: navegacion; }
+
+#banner {
+  grid-area: carr; }
+
+#atracciones {
+  grid-area: atrac; }
+
+#promo {
+  grid-area: promoc; }
+
+#info {
+  grid-area: add; }
+
+#tabla {
+  grid-area: table; }
+
+#contacto {
+  grid-area: contact; }
+
+footer {
+  grid-area: pie; }
+
+/* dispositivo pequeño */
+@media (max-width: 480px) {
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "navegacion navegacion sup" "carr carr carr" "atrac atrac atrac" "promoc promoc promoc" "add add add" "table table table" "contact contact contact" "pie pie pie"; }
+  /* CSS */
+  * {
+    margin: 0px;
+    padding: 0px; }
+  body {
+    margin: 0;
+    padding: 10px; }
+  #logo .logoimage {
+    width: 30vw; }
+  nav div {
+    text-transform: uppercase;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    color: cornsilk; }
+  nav a:visited {
+    text-decoration: none;
+    color: cornsilk; }
+  #banner {
+    width: 90vw; }
+    #banner img {
+      width: 90vw; }
+  #promo .add-horizontal {
+    display: block; }
+  #promo .add-vertical {
+    display: none; }
+  #promo img {
+    margin: 0%;
+    width: 100%; }
+  #info h1 {
+    text-align: center;
+    text-transform: uppercase; }
+  #info p {
+    text-align: center; }
+  #tabla h1 {
+    text-align: center;
+    text-transform: uppercase; }
+  #tabla img {
+    width: 90vw; }
+  #contacto {
+    text-align: center;
+    text-transform: uppercase; }
+  #contacto .formfond {
+    background-color: cornsilk; }
+  footer {
+    text-align: center; }
+  /* FIN CSS */
+  /* FLEX */
+  .nav-flex {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column; }
+  .atrac-flex img {
+    display: flex;
+    flex-direction: column;
+    width: 60vw; }
+  #atracciones .imgatra-flex {
+    display: flex;
+    justify-content: center; }
+  /* FIN FLEX */ }
+
+/* FIN PEQUEÑO */
+/* dispositivo mediano */
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* GRID AREAS */
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "sup sup sup" "navegacion navegacion navegacion" "carr carr carr" "atrac atrac atrac" "add add promoc" "table table promoc" "contact contact contact" "pie pie pie"; }
+  /* INICIO CSS */
+  * {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90vw; }
+  #logo img {
+    width: 100px; }
+  nav div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4f7cce;
+    text-align: center;
+    font-weight: 700;
+    color: cornsilk; }
+  nav a:visited {
+    text-decoration: none;
+    color: cornsilk; }
+  #atracciones div img {
+    width: 40vw; }
+  #promo .add-vertical {
+    display: block; }
+  #promo .add-horizontal {
+    display: none; }
+  #info {
+    width: 68vw; }
+    #info h1 {
+      text-align: center;
+      width: 68vw; }
+    #info p {
+      text-align: center;
+      width: 68vw; }
+  #tabla {
+    width: 68vw; }
+    #tabla h1 {
+      text-align: center;
+      width: 68vw; }
+    #tabla img {
+      width: 68vw; }
+  #promo {
+    width: 20vw; }
+  #promo img {
+    width: 20vw; }
+  #contacto {
+    text-align: center; }
+    #contacto h1 {
+      text-align: center; }
+    #contacto .formfond {
+      background-color: cornsilk; }
+  footer {
+    text-align: center; }
+  /* FIN CSS */
+  /* INICIO GRIDS */
+  #atracciones .grilla-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; }
+  /* FIN GRIDS */
+  /* FLEX */
+  #logo {
+    display: flex;
+    justify-content: center; }
+  .nav-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start; }
+  #contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #promo {
+    display: flex;
+    justify-content: flex-end; }
+  /* FIN FLEX */ }
+
+/*FIN MEDIANO*/
+/* escritorio */
+@media (min-width: 1025px) {
+  /* GRID AREAS */
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "sup sup sup" "navegacion navegacion navegacion" "carr carr carr" "atrac atrac atrac" "add add promoc" "table table promoc" "contact contact contact" "pie pie pie"; }
+  /* INICIO CSS */
+  * {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90vw; }
+  #logo img {
+    width: 100px; }
+  nav div {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3666be;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: cornsilk; }
+  nav a:visited {
+    text-decoration: none;
+    color: cornsilk; }
+  nav a:active {
+    text-decoration: none;
+    color: cornsilk; }
+  #atracciones {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  #atracciones div img {
+    width: 20vw; }
+  #promo .add-vertical {
+    display: block; }
+  #promo .add-horizontal {
+    display: none; }
+  #info {
+    width: 68vw; }
+  #info h1 {
+    text-align: center;
+    width: 68vw; }
+  #info p {
+    text-align: center;
+    width: 68vw; }
+  #tabla {
+    width: 68vw; }
+  #tabla h1 {
+    text-align: center;
+    width: 68vw; }
+  #tabla img {
+    width: 68vw; }
+  #promo {
+    width: 20vw; }
+  #promo img {
+    width: 20vw; }
+  #contacto h1 {
+    text-align: center; }
+  #contacto {
+    text-align: center; }
+  #contacto .formfond {
+    background-color: cornsilk; }
+  footer {
+    text-align: center; }
+  /* FIN CSS */
+  /* FLEX */
+  #logo {
+    display: flex;
+    justify-content: center; }
+  .nav-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; }
+  .grilla-grid {
+    display: flex;
+    flex-flow: row nowrap; }
+  #contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #promo {
+    display: flex;
+    justify-content: flex-end; }
+  /* FIN FLEX */
+  /* ANIMACION */
+  .navanim {
+    transition: width, 1s; }
+  .navanim:hover {
+    width: 300px; }
+  .imgatra-flex img {
+    transition: scale, 1s; }
+  .imgatra-flex img:hover {
+    scale: 110%; }
+  /* FIN ANIMACION */ }
+
+/* FIN ESCRITORIO */

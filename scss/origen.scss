@@ -1,0 +1,20 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    background-color: cornflowerblue;
+    
+}
+
+/*index */
+#logo {grid-area: sup}
+nav {grid-area: navegacion}
+#banner {grid-area: carr}
+#atracciones {grid-area: atrac}
+#promo {grid-area: promoc}
+#info {grid-area: add}
+#tabla {grid-area: table}
+#contacto {grid-area: contact}
+footer {grid-area: pie}
+
+@import "_movil";
+@import "_medium";
+@import "_escritorio"

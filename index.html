@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <title>SCSS</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <!--FUENTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="gridAreas"> 
+    <section id="logo" class="logo-flex" >
+        <img src="assets/img/CK_Logo.png" alt="" class="logoimage">
+    
+    </section>
+
+    <nav  class="nav-flex">
+
+        <div class="navanim"><a href="index.html"> Inicio</a></div>
+        <div class="navanim"><a href="pages/nosotros.html"> Nosotros</a></div>
+        <div class="navanim"><a href="pages/proyecto.html"> Proyecto</a></div>
+        <div class="navanim"><a href="pages/atracciones.html"> Atracciones</a></div>
+        <div class="navanim"><a href="pages/nosotros.html"> Planifica tu visita</a></div>
+
+    </nav>
+    <section id="banner" class="border">
+        <img src="assets/img/og_image.jpg" alt="" class="banner1">
+    </section>
+
+    
+    <section id="atracciones" class="border atrac-flex ">
+        <section class="grilla-grid">
+         <div class="imgatra-flex">
+            <img src="assets/img/copperhead.jpg" alt=""></div>
+        <div class="imgatra-flex">
+            <img src="assets/img/copperhead.jpg" alt=""></div>
+        <div class="imgatra-flex">
+            <img src="assets/img/copperhead.jpg" alt=""></div>
+        <div class="imgatra-flex">
+            <img src="assets/img/copperhead.jpg" alt=""></div>   
+        </section>
+        
+    </section>
+
+
+    <section id="promo" class="border">
+        <img src="assets/img/add_horizontal.jpg" alt="" class="add-horizontal">
+        <img src="assets/img/add_vertical.jpg" alt="" class="add-vertical" > 
+    </section>
+
+
+    <section id="info" class="border">
+        <h1>Noticias!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio quo facilis ipsa illo rem, consequatur nulla inventore soluta aliquam nisi voluptate commodi cumque placeat praesentium mollitia, dolores eveniet corrupti?</p>
+    </section>
+    
+    <section id="tabla" class="border">
+        <h1>Precios y promociones</h1>
+        <img src="assets/img/add_horizontal.jpg" alt="" >
+       
+    </section>
+
+    <section id="contacto" class="border">
+        <h1>Contactanos!</h1>
+        
+            <form action="">
+                <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Coaster King" class="formfond"> <br>
+                
+                <label for="correo">Mail</label>
+                    <input type="email" name="correo" placeholder="pcfan@gmail.com" class="formfond"> <br>
+                
+                <label for="comentarios">Mensaje</label>
+                    <textarea name="comentarios" cols="30" rows="5" class="formfond"></textarea> <br>
+                    <p>Eres un jugador de planet coaster?</p>
+                    <div>Si</div>
+                    <input type="radio" name="jugador" value="si">
+                    <div>No</div>
+                    <input type="radio" name="jugador" value="no">
+                    <div>Me gustaria</div>
+                    <input type="radio" name="jugador" value="mg"> <br>
+                <input type="submit" value="Enviar">
+               </form>
+            
+    </section>
+
+
+    <footer class="border">
+
+        <a href="https://www.planetcoaster.com/es-es" target="blank">
+            Sitio web en base al juego Planet Coaster
+        </a> <br>
+        <a href= "#logo">Arriba</a>
+
+
+    </footer>
+</body>
+
+</html>

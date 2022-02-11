@@ -1,0 +1,135 @@
+/* dispositivo pequeño */
+@media (max-width:480px){
+
+
+    
+    #gridAreas {
+
+        display: grid;
+    
+        grid-template-areas:
+    
+        
+        "navegacion navegacion sup"
+        "carr carr carr"
+        "atrac atrac atrac"
+        "promoc promoc promoc"
+        "add add add"
+        "table table table"
+        "contact contact contact"
+        "pie pie pie";
+    }
+/* CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+        
+        margin: 0;
+        padding: 10px;
+    }
+
+#logo .logoimage{
+    
+    width: 30vw;
+}   
+
+
+nav  {div{
+    text-transform: uppercase;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 700;
+    color: cornsilk;}
+      a:visited {
+        text-decoration: none;
+        color:cornsilk}
+      }
+    
+#banner {
+        width: 90vw;
+        img{width: 90vw;}
+    }
+
+
+#promo .add-horizontal {
+    display: block;
+}
+#promo .add-vertical {
+    display: none;
+}
+
+#promo img {
+    margin: 0%;
+    width: 100%;
+}
+
+#info{ h1 {
+    text-align: center;
+    text-transform: uppercase;}
+ p {
+    text-align: center;}
+ }
+
+#tabla h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#tabla img {
+    width: 90vw;
+}
+
+#contacto  {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contacto .formfond {
+    background-color: cornsilk;
+}
+
+
+footer {
+    text-align: center;
+}
+
+/* FIN CSS */
+/* FLEX */
+
+ 
+
+
+
+
+.nav-flex {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.atrac-flex img{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    
+}
+#atracciones .imgatra-flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* FIN FLEX */
+
+}
+/* FIN PEQUEÑO */
